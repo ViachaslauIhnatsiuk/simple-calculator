@@ -17,8 +17,8 @@
 
 </header>
 		<main class="calculator">
-			<input type="text" id="input1" class="calculator__first-value" placeholder="0">
-			<input type="text" id="input2" class="calculator__second-value" placeholder="0">
+			<input type="text" id="input1" class="calculator__first-value" placeholder="0" maxlength="9">
+			<input type="text" id="input2" class="calculator__second-value" placeholder="0" maxlength="9">
 			<div class="calculator__operators">
 				<button class="calculator__sum" onclick="sum()">+</button>
 				<button class="calculator__subtraction" onclick="subtraction()">-</button>
@@ -26,7 +26,9 @@
 				<button class="calculator__division" onclick="division()">/</button>
 				<button class="calculator__exponentiation" onclick="exponentiation()">**</button>
 			</div>
-			<div class="calculator__outcome" id="result">0</div>
+			<div class="calculator__outcome" id="result">
+				<p>0</p>
+			</div>
 			<button class="calculator__reset" id="reset" onclick="reset()">RESET</button>
 		</main>
 		<footer class="footer">
