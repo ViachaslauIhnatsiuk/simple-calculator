@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="stylesheet" href="css/style.min.css">
+	<!-- <link rel="shortcut icon" href="favicon.ico"> -->
+	<title>Simple calculator</title>
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+
+</header>
+		<main class="calculator">
+			<input type="text" id="input1" class="calculator__first-value" placeholder="0">
+			<input type="text" id="input2" class="calculator__second-value" placeholder="0">
+			<div class="calculator__operators">
+				<button class="calculator__sum" onclick="sum()">+</button>
+				<button class="calculator__subtraction" onclick="subtraction()">-</button>
+				<button class="calculator__multiplication" onclick="multiplication()">*</button>
+				<button class="calculator__division" onclick="division()">/</button>
+				<button class="calculator__exponentiation" onclick="exponentiation()">**</button>
+			</div>
+			<div class="calculator__outcome" id="result">0</div>
+			<button class="calculator__reset" id="reset" onclick="reset()">RESET</button>
+		</main>
+		<footer class="footer">
+
+</footer>
+		<script src="js/script.min.js"></script>
+</body>
+
+</html>
