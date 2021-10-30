@@ -59,6 +59,13 @@ $md4: 479.98;
 	flex-direction: column;
 	border-radius: 15px;
 
+	input[type="number"]::-webkit-inner-spin-button,
+	input[type="number"]::-webkit-outer-spin-button {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		margin: 0;
+	}
 	&__first-value,
 	&__second-value {
 		text-align: right;
